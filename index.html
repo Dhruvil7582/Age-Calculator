@@ -8,16 +8,18 @@
     <title>Age Calculator</title>
 </head>
 <body>
-    <div class="container">
-        <p id="currDate"> </p>
-        <p>Enter the DOB badri in format : (MM/DD/YYYY)</p>
-        <input type="text" placeholder="Enter your D.O.B" id="DOB">
-        <button id="CalcAge">Age</button>
+    <div class="wrapper">
+        <div class="container">
+            <p id="currDate"></p>
+            <label for="DOB" class="input-label">Select your Date of Birth</label>
+            <input type="date" id="DOB">
+            <button id="CalcAge">Calculate Age</button>
+            
+            <div id="displayAge">
+                <p id="age"></p>
+            </div>
+        </div>
     </div>
-  <div id="displayAge">
-      <p id="age"></p>
-  </div>
-    <script src="script.js">
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
